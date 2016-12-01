@@ -1,4 +1,4 @@
-# logagent-tcp-input
+# logagent-inpt-windows-events
 
 Plugin to collect windows events 
 
