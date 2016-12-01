@@ -10,14 +10,14 @@ npm i -g @sematext/logagent
 
 2. Install this plugin 
 ```
-npm i -g @sematext/logagent-tcp-input  
+npm i -g logagent-input-windows-events  
 ```
 3. configure logagent 
 
 ```
 input:
   win-event:
-    module: logagent-input-win-event
+    module: logagent-input-windows-events 
     intervall: 10
     providers: 
       - TestApp2
