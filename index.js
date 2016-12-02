@@ -7,7 +7,7 @@ var WinEventEmitter = require('win-getevent').WinEventEmitter;
  *  win-event:
  *    module: logagent-input-win-event
  *    intervall: 10
- *    providers: 
+ *    providers:
  *      - TestApp2
  *      - Microsoft-Windows-DNS-Client
  *
@@ -15,7 +15,7 @@ var WinEventEmitter = require('win-getevent').WinEventEmitter;
  * @eventEmitter logent eventEmitter object
  */
 function InputWinEvent (config, eventEmitter) {
-  this.config = config
+  this.config = config.configFile.input.win-event
   this.eventEmitter = eventEmitter
 }
 
