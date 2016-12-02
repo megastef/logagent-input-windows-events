@@ -27,11 +27,11 @@ InputWinEvent.prototype.start = function () {
   if (!this.started) {
     var self = this
     self.winEmitter = new WinEventEmitter({
-     providers: ['TestApp2'],//Microsoft-Windows-LoadPerf', 'McAfee Service Controller', 'Microsoft-Windows-DNS-Client', 'Microsoft-Windows-Kernel-General', 'HPSupportSolutionsFrameworkService '], //['MMicrosoft-Windows-GroupPolicy'],
+     providers: this.config.providers
      frequency: (this.config.interval||10) * 1000,
      maxEvents: (this.config.maxEvents||1000) 
     })
-    var context = {source: 'windowsEvent'}
+    var context = {sourceName: 'windowsEvent'}
     self.winEmitter.on('data', logs => {
         // Contains an array of log objects 
         logs.forEach(log => {
