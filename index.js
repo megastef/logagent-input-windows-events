@@ -15,7 +15,7 @@ var WinEventEmitter = require('win-getevent').WinEventEmitter;
  * @eventEmitter logent eventEmitter object
  */
 function InputWinEvent (config, eventEmitter) {
-  this.config = config.configFile.input.win-event
+  this.config = config.configFile.input['windowsEvent']
   this.eventEmitter = eventEmitter
 }
 
