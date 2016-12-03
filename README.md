@@ -13,7 +13,7 @@ npm i -g logagent-input-windows-events
 3) configure logagent 
 ```
 input:
-  win-event:
+  windowsEvent:
     module: logagent-input-windows-events 
     intervall: 10
     providers: 
