@@ -1,6 +1,6 @@
 {
   "name": "logagent-input-windows-events",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Plugin to collect windows events",
   "main": "index.js",
   "scripts": {
