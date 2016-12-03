@@ -34,4 +34,7 @@ output:
 logagent --config myconfig.yml
 ```
 
+5. Result in Kibana
+![](https://sematext.com/wp-content/uploads/2016/12/Bildschirmfoto-2016-12-02-um-21.44.27.png)
+
 
