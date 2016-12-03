@@ -1,8 +1,8 @@
 # logagent-inpt-windows-events
 
-Plugin to collect windows events 
+Plugin for [Logagent](https://sematext.com/loagagent) to collect windows events 
 
-1) Install logagent 2.x 
+1) Install [logagent 2.x](https://www.npmjs.com/package/@sematext/logagent) 
 ```
 npm i -g @sematext/logagent
 ```
