@@ -16,15 +16,11 @@ input:
   windowsEvent:
     module: logagent-input-windows-events 
     intervall: 10
-    providers: 
-      - Microsoft-Windows-Security-SPP
-      - Microsoft-Windows-Security-Auditing
-      - Microsoft-Windows-DNS-Client
-      - Service Control Manager
-      - Microsoft-Windows-Kernel-General
-      - MsiInstaller
-      - Microsoft-Windows-RestartManager
-      - Microsoft-Windows-CAPI2
+    logNames: 
+      - Security
+      - System
+      - Application
+      - Setup
 
 output:
   elasticsearch:
