@@ -27,7 +27,7 @@ InputWinEvent.prototype.start = function () {
   if (!this.started) {
     var self = this
     self.winEmitter = new WinEventEmitter({
-     providers: this.config.providers,
+     logNames: this.config.logNames || ['System','Application','Security','Setup'],
      frequency: (this.config.interval||10) * 1000,
      maxEvents: (this.config.maxEvents||1000) 
     })
